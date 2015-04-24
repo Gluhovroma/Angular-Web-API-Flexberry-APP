@@ -1,0 +1,65 @@
+﻿<style>
+    tr a {
+        opacity: 0.2;
+    }
+
+    tr:hover a {
+        opacity: 1.0;
+    }
+<style>
+    tr a {
+        opacity: 0.2;
+    }
+
+    tr:hover a {
+        opacity: 1.0;
+    }
+</style>
+<div class="container">
+
+    <div class="row-fluid">
+        <h4>Список городов</h4>
+    </div>
+
+    <div class="row-fluid">
+        <div class="col-md-12">      
+            <div class="col-md-3" style="display:inline-block">
+                <input type="text" name="provider" data-ng-model="newCity.Name" >
+             </div>
+            <div class="col-md-3" style="display:inline-block">
+                <button class="btn btn-default" ng-click="addCity(newCity)">Добавить город</button>
+            </div>                
+        </div>        
+    </div>
+    <div class="row-fluid" style="height:20px; color:red" ng-show="cityBool">Такой город уже есть</div>
+        <div class="row-fluid">
+            <div class="span3">
+                <table class="table table-condensed table-hover">
+                    <thead>
+                        <tr>
+                            <th class="span2">&nbsp;</th>
+                            <th class="span1">Город</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="city in cities">
+                            <td class="input-append">
+                                @*<a class="btn btn-link" ng-click="viewPerson(person.personId)"><i class="icon-eye-open"></i></a>*@
+                                @*<a class="btn btn-link" ng-click="editPerson(person.PhoneNumber)"><i class="icon-edit"></i></a>*@
+                                <a class="btn btn-link" ng-click="deleteCity(city.Name)"><i class="icon-trash"></i></a>
+                            </td>
+                            <td>{{city.Name}}</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+
+

@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProjectGuid>{60152FE0-9807-4E7C-A1F8-677EC86B1203}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>Providers(Objects)</AssemblyName>
+    <OutputType>Library</OutputType>
+    <RootNamespace>IIS.Providers</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>Providers(Objects).xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>Providers(Objects).xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ChangesToSqlBTMonitor">
+      <HintPath>..\..\packages\NewPlatform.Flexberry.ORM.1.0.2\lib\net40\ChangesToSqlBTMonitor.dll</HintPath>
+    </Reference>
+    <Reference Include="ExternalLangDef">
+      <HintPath>..\..\packages\NewPlatform.Flexberry.ORM.1.0.2\lib\net40\ExternalLangDef.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.Services.CurrentUserService">
+      <HintPath>..\..\packages\NewPlatform.Flexberry.CurrentUserService.1.0.1\lib\net40\ICSSoft.Services.CurrentUserService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.Services.UnityFactory">
+      <HintPath>..\..\packages\NewPlatform.Flexberry.UnityFactory.1.0.1\lib\net40\ICSSoft.Services.UnityFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.BF">
+      <HintPath>..\..\packages\NewPlatform.Flexberry.ORM.1.0.2\lib\net40\ICSSoft.STORMNET.BF.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business">
+      <HintPath>..\..\packages\NewPlatform.Flexberry.ORM.1.0.2\lib\net40\ICSSoft.STORMNET.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.DRDataService">
+      <HintPath>..\..\packages\NewPlatform.Flexberry.ORM.1.0.2\lib\net40\ICSSoft.STORMNET.Business.DRDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.LINQProvider">
+      <HintPath>..\..\packages\NewPlatform.Flexberry.ORM.1.0.2\lib\net40\ICSSoft.STORMNET.Business.LINQProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.LockService">
+      <HintPath>..\..\packages\NewPlatform.Flexberry.ORM.1.0.2\lib\net40\ICSSoft.STORMNET.Business.LockService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.MSSQLDataService">
+      <HintPath>..\..\packages\NewPlatform.Flexberry.ORM.1.0.2\lib\net40\ICSSoft.STORMNET.Business.MSSQLDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.ODBCDataService">
+      <HintPath>..\..\packages\NewPlatform.Flexberry.ORM.1.0.2\lib\net40\ICSSoft.STORMNET.Business.ODBCDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.OracleDataService">
+      <HintPath>..\..\packages\NewPlatform.Flexberry.ORM.1.0.2\lib\net40\ICSSoft.STORMNET.Business.OracleDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Business.PostgresDataService">
+      <HintPath>..\..\packages\NewPlatform.Flexberry.ORM.1.0.2\lib\net40\ICSSoft.STORMNET.Business.PostgresDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Collections">
+      <HintPath>..\..\packages\NewPlatform.Flexberry.ORM.1.0.2\lib\net40\ICSSoft.STORMNET.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.DataObject">
+      <HintPath>..\..\packages\NewPlatform.Flexberry.ORM.1.0.2\lib\net40\ICSSoft.STORMNET.DataObject.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Drawing">
+      <HintPath>..\..\packages\NewPlatform.Flexberry.ORM.1.0.2\lib\net40\ICSSoft.STORMNET.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.FunctionalLanguage">
+      <HintPath>..\..\packages\NewPlatform.Flexberry.ORM.1.0.2\lib\net40\ICSSoft.STORMNET.FunctionalLanguage.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.Tools">
+      <HintPath>..\..\packages\NewPlatform.Flexberry.ORM.1.0.2\lib\net40\ICSSoft.STORMNET.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSSoft.STORMNET.UserDataTypes">
+      <HintPath>..\..\packages\NewPlatform.Flexberry.ORM.1.0.2\lib\net40\ICSSoft.STORMNET.UserDataTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="LogService">
+      <HintPath>..\..\packages\NewPlatform.Flexberry.LogService.1.0.2\lib\net40\LogService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\packages\Npgsql.2.2.3\lib\net40\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\..\packages\Npgsql.2.2.3\lib\net40\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq">
+      <HintPath>..\..\packages\Remotion.Linq.1.13.183.0\lib\net35\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.XML">
+      <HintPath>System.XML.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Subscriber.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="City.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

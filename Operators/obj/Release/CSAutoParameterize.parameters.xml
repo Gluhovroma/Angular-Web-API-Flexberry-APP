@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefConnStr-Web.config Connection String" description="DefConnStr Строка подключения в web.config, используемая приложением для доступа к базе данных." defaultValue="Data Source=SQL5002.Smarterasp.net;Initial Catalog=DB_9C1268_ProvidersDB;User Id=DB_9C1268_ProvidersDB_admin;Password=hrustal1061;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Роман\\Documents\\Visual\ Studio\ 2013\\Projects\\Operators\\Operators\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefConnStr']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Строка подключения в web.config, используемая приложением для доступа к базе данных." defaultValue="DefaultConnection_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Роман\\Documents\\Visual\ Studio\ 2013\\Projects\\Operators\\Operators\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

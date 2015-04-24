@@ -1,0 +1,68 @@
+﻿<style>
+    tr a {
+        opacity: 0.2;
+    }
+
+    tr:hover a {
+        opacity: 1.0;
+    }
+</style>
+<div class="container">
+
+    <div class="row-fluid">
+        <h4>Список Абонентов</h4>
+    </div>
+
+    <div class="row-fluid">
+        <div class="col-md-3" style="display:inline-block">
+            <a class="btn btn-link" ng-click="createPerson()"><i class="icon-plus-sign"></i> Add Person</a>
+        </div>
+        <div class="col-md-3" style="display:inline-block">
+            <select ng-model="myCity" ng-options="city.Name for city in cities" ng-change="subscriberFilter()">
+                <option value="">Выберите город</option>
+            </select>
+        </div>
+        <div class="col-md-3" style="display:inline-block">
+            <select ng-model="myProvider" ng-options="provider.Name for provider in providers " ng-change="subscriberFilter()">
+                <option value="">Выберите оператора</option>
+            </select>
+        </div>
+        <div class="col-md-3" style="display:inline-block">
+            
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <table class="table table-condensed table-hover">
+            <thead>
+                <tr>
+                    <th class="span2">&nbsp;</th>
+                    <th class="span1">Фамилия</th>
+                    <th class="span3">Имя</th>
+                    <th class="span2">Отчество</th>
+                    <th class="span3">Номер паспорта</th>
+                    <th class="span1">Номер телефона</th>
+                    <th class="span1">Город</th>
+                    <th class="span1">Оператор</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="person in people">
+                    <td class="input-append">
+                        @*<a class="btn btn-link" ng-click="viewPerson(person.personId)"><i class="icon-eye-open"></i></a>*@
+                        <a class="btn btn-link" ng-click="editPerson(person.PhoneNumber)"><i class="icon-edit"></i></a>
+                        <a class="btn btn-link" ng-click="deletePerson(person.PhoneNumber)"><i class="icon-trash"></i></a>
+                    </td>
+                    <td>{{person.Surname}}</td>
+                    <td>{{person.Name}}</td>
+                    <td>{{person.Lastname}}</td>
+                    <td>{{person.Passport}}</td>
+                    <td>{{person.PhoneNumber}}</td>
+                    <td>{{person.City.Name}}</td>
+                    <td>{{person.Provider.Name}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+

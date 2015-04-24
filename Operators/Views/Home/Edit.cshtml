@@ -1,0 +1,81 @@
+﻿<div class="container">
+    <form name="personForm" class="ng-cloak">
+        <div class="row-fluid">
+            <div class="span6">
+                <fieldset>
+                    <legend>Данные абонента</legend>
+                    <div class="control-group">
+                        <label class="control-label" for="title">Фамилия</label>
+                        <div class="controls">
+                            <input type="text" name="title" data-ng-model="person.Surname" class="span6" />
+                            <div ng-show="noSurname" style="display: inline-block;color: red;">Вы не ввели фамилию</div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="firstName">Имя</label>
+                        <div class="controls">
+                            <input type="text" name="firstName" data-ng-model="person.Name" class="span6" />
+                            <div ng-show="noName" style="display: inline-block;color: red;">Вы не ввели имя</div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="middleName">Отчество</label>
+                        <div class="controls">
+                            <input type="text" name="middleName" data-ng-model="person.Lastname" class="span6" />
+                            <div ng-show="noLastName" style="display: inline-block;color: red;">Вы не ввели отчество</div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="lastName">Телефон</label>
+                        <div class="controls">
+                            <input type="text" name="lastName" data-ng-model="person.PhoneNumber" class="span6" />
+                            <div ng-show="noPhone" style="display: inline-block;color: red;">Вы не ввели телефон</div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="suffix">Паспортные данные</label>
+                        <div class="controls">
+                            <input type="text" name="suffix" data-ng-model="person.Passport" class="span6" />
+                            <div ng-show="noPassport" style="display: inline-block;color: red;">Вы не ввели паспортные данные</div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="suffix">Выберите город</label>
+                        <div class="controls">
+                            <select data-ng-model="myCity" data-ng-options="city.Name for city in cities">
+                                <option value="">Выберите город</option>
+                            </select>
+                            <div ng-show="noCity" style="display: inline-block;color: red;">Вы не выбрали город</div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="suffix">Выберите оператора</label>
+                        <div class="controls">
+                            <select data-ng-model="myProvider" data-ng-options="provider.Name for provider in providers ">
+                                <option value="">Выберите оператора</option>
+                            </select>
+                            <div ng-show="noProvider" style="display: inline-block;color: red;">Вы не выбрали оператора</div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="span6"></div>
+        </div>
+        <div class="row-fluid">
+            <div class="control-group">
+                <div class="controls row-fluid">
+                    <div class="span12">
+                        <button class="btn" data-ng-click="save()"><i class="icon-remove-sign"></i> Save</button>
+                        <button class="btn" data-ng-click="returnToList()"><i class="icon-remove-sign"></i> Return to List</button>
+                    </div>
+                </div>
+                <div class="row-fluid" data-ng-show="errorMessage">
+                    <div class="span12 text-error">
+                        {{errorMessage}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+

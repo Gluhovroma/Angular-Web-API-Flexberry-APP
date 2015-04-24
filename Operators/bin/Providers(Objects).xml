@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Providers(Objects)</name>
+    </assembly>
+    <members>
+        <member name="T:IIS.Providers.Subscriber">
+            <summary>
+            Subscriber.
+            </summary>
+        </member>
+        <member name="P:IIS.Providers.Subscriber.Surname">
+            <summary>
+            Surname.
+            </summary>
+        </member>
+        <member name="P:IIS.Providers.Subscriber.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:IIS.Providers.Subscriber.Lastname">
+            <summary>
+            Lastname.
+            </summary>
+        </member>
+        <member name="P:IIS.Providers.Subscriber.PhoneNumber">
+            <summary>
+            PhoneNumber.
+            </summary>
+        </member>
+        <member name="P:IIS.Providers.Subscriber.Passport">
+            <summary>
+            Passport.
+            </summary>
+        </member>
+        <member name="P:IIS.Providers.Subscriber.Provider">
+            <summary>
+            Subscriber.
+            </summary>
+        </member>
+        <member name="P:IIS.Providers.Subscriber.City">
+            <summary>
+            Subscriber.
+            </summary>
+        </member>
+        <member name="T:IIS.Providers.Subscriber.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Providers.Subscriber.Views.SubcriberAll">
+            <summary>
+            "SubcriberAll" view.
+            </summary>
+        </member>
+        <member name="T:IIS.Providers.City">
+            <summary>
+            City.
+            </summary>
+        </member>
+        <member name="P:IIS.Providers.City.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="T:IIS.Providers.City.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Providers.City.Views.Cities">
+            <summary>
+            "Cities" view.
+            </summary>
+        </member>
+        <member name="T:IIS.Providers.Provider">
+            <summary>
+            Provider.
+            </summary>
+        </member>
+        <member name="P:IIS.Providers.Provider.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="T:IIS.Providers.Provider.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Providers.Provider.Views.Providers">
+            <summary>
+            "Providers" view.
+            </summary>
+        </member>
+    </members>
+</doc>
